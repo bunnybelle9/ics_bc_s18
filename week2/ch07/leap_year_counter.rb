@@ -6,15 +6,11 @@ puts
 year = start_year
 while year <= end_year
   if (year.to_i % 4) == 0
-    if (year.to_i % 100) == 0
-	    if (year.to_i % 400) == 0
-	      puts year
-	    else
-	    end
-	  else
+    if (year.to_i % 100) == 0 && (year.to_i % 400) == 0
+	    puts year
+	  elsif (year.to_i % 100) != 0
 	    puts year
 	  end
-  else
   end
   year = year + 1
 end

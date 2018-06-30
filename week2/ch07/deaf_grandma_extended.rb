@@ -16,10 +16,7 @@ while convo == 'on'
 	    input = gets.chomp
 	    if input == 'BYE'
 	      convo = 'off'
-	    else
       end
-    else
     end
-  else
   end
 end
